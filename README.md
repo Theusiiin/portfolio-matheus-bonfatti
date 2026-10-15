@@ -17,10 +17,6 @@ Portfólio pessoal moderno e responsivo, com tema escuro (padrão) e claro, apre
 6. **Contato** — LinkedIn e GitHub.
 7. **Rodapé**.
 
-## Como personalizar
-
-Todo o conteúdo fica em **[`src/content.ts`](src/content.ts)**: apresentação, “Sobre mim”, competências, projetos, experiência e formação. Itens com `placeholder: true` (ou com o texto `[PREENCHER]`) aparecem no site com o selo **“Conteúdo provisório”** — um teste automatizado garante essa marcação. Hoje nenhum item está provisório.
-
 ## Recursos
 
 - Tema escuro/claro com alternância, preferência do sistema e escolha salva (sem “piscar” ao carregar).
