@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matheus Bonfatti — Portfólio</title>
+    <meta name="description" content="Portfólio de Matheus Bonfatti: projetos web com React e TypeScript — calculadora financeira, consulta de clima e catálogo de filmes e séries." />
+    <meta name="author" content="Matheus Bonfatti" />
+    <meta name="theme-color" content="#0a0b10" />
+    <link rel="canonical" href="https://theusiiin.github.io/portfolio-matheus-bonfatti/" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Matheus Bonfatti — Portfólio" />
+    <meta property="og:description" content="Projetos web com React, TypeScript e APIs públicas." />
+    <meta property="og:url" content="https://theusiiin.github.io/portfolio-matheus-bonfatti/" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Matheus Bonfatti",
+        "url": "https://theusiiin.github.io/portfolio-matheus-bonfatti/",
+        "sameAs": ["https://www.linkedin.com/in/matheus-bonfatti-lara-73a78a235/", "https://github.com/Theusiiin"]
+      }
+    </script>
+    <script>
+      // aplica o tema antes da renderização para evitar "piscar"
+      try {
+        var t = localStorage.getItem('portfolio:theme')
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+        document.documentElement.dataset.theme = t
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p>Matheus Bonfatti — portfólio. Ative o JavaScript ou acesse <a href="https://github.com/Theusiiin">github.com/Theusiiin</a> e <a href="https://www.linkedin.com/in/matheus-bonfatti-lara-73a78a235/">LinkedIn</a>.</p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

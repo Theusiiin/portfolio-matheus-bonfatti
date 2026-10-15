@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://theusiiin.github.io/portfolio-matheus-bonfatti/sitemap.xml
