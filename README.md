@@ -10,22 +10,16 @@ Portfólio pessoal moderno e responsivo, com tema escuro (padrão) e claro, apre
 ## Seções
 
 1. **Início** — nome, apresentação curta, botões para projetos e contato, links do LinkedIn e GitHub.
-2. **Sobre mim** — *texto provisório*.
-3. **Competências técnicas** — tecnologias aplicadas nos projetos do portfólio.
-4. **Projetos em destaque** — CineScope, Calculadora Financeira, Consulta Clima e este site, com links para a aplicação e o código.
-5. **Experiência e formação** — *itens provisórios*.
+2. **Sobre mim** — formação em ADS, experiência em suporte e interesse em desenvolvimento.
+3. **Competências técnicas** — Front-end e Back-end; Dados e integrações.
+4. **Projetos em destaque** — CineTheusin, Calculadora Financeira, Consulta Clima e este site, com links para a aplicação e o código.
+5. **Experiência e formação** — trajetória profissional e acadêmica (baseada no currículo).
 6. **Contato** — LinkedIn e GitHub.
 7. **Rodapé**.
 
-## Como personalizar (conteúdo provisório)
+## Como personalizar
 
-Todo o conteúdo fica em **[`src/content.ts`](src/content.ts)**. Os itens marcados com `[PREENCHER]` e `placeholder: true` aparecem no site com o selo **“Conteúdo provisório”**:
-
-- `about.paragraphs` — escreva seu texto e mude `about.placeholder` para `false`;
-- `experience` e `education` — substitua pelos seus dados reais e use `placeholder: false` em cada item (ou deixe a lista vazia);
-- `skills` — acrescente outras competências, se quiser.
-
-Nenhuma empresa, cargo, curso ou certificação foi inventada. Um teste automatizado garante que nenhum texto `[PREENCHER]` fique sem o selo de provisório.
+Todo o conteúdo fica em **[`src/content.ts`](src/content.ts)**: apresentação, “Sobre mim”, competências, projetos, experiência e formação. Itens com `placeholder: true` (ou com o texto `[PREENCHER]`) aparecem no site com o selo **“Conteúdo provisório”** — um teste automatizado garante essa marcação. Hoje nenhum item está provisório.
 
 ## Recursos
 
@@ -76,7 +70,6 @@ O workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) testa,
 
 ## Limitações conhecidas
 
-- “Sobre mim”, “Experiência” e “Formação” estão com conteúdo provisório até serem preenchidos.
 - Não há formulário de contato (o contato é feito pelo LinkedIn); não foi publicado nenhum e-mail.
 - Os cartões dos projetos usam ilustrações vetoriais, não capturas de tela.
 

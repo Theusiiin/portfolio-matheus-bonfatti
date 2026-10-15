@@ -25,10 +25,10 @@ export interface AboutContent {
 }
 
 export const about: AboutContent = {
-  placeholder: true,
+  placeholder: false,
   paragraphs: [
-    '[PREENCHER] Escreva aqui um resumo sobre você: sua trajetória, o que você gosta de construir e o tipo de oportunidade que procura.',
-    '[PREENCHER] Um segundo parágrafo opcional com interesses, áreas de foco ou objetivos profissionais.',
+    'Sou formado em Análise e Desenvolvimento de Sistemas e trabalho há mais de 5 anos com suporte técnico, Service Desk e sustentação de plataformas SaaS. Hoje não atuo diretamente com desenvolvimento, mas tenho grande interesse em ingressar na área.',
+    'Gosto de aprender coisas novas e de entender como os sistemas funcionam por dentro — e a experiência no suporte me ensinou a investigar problemas, conversar com clientes e equipes técnicas e pensar em quem usa o produto. Os projetos deste portfólio são parte dessa transição: aplicações completas, testadas e publicadas, que mostram como gosto de construir.',
   ],
 }
 
@@ -42,10 +42,8 @@ export interface SkillGroup {
  * Acrescente outras competências suas se desejar.
  */
 export const skills: SkillGroup[] = [
-  { title: 'Front-end', items: ['React', 'TypeScript', 'JavaScript', 'HTML semântico', 'CSS responsivo', 'Acessibilidade (ARIA)'] },
+  { title: 'Front-end e Back-end', items: ['React', 'TypeScript', 'JavaScript', 'HTML semântico', 'CSS responsivo'] },
   { title: 'Dados e integrações', items: ['APIs REST', 'Open-Meteo', 'TMDB', 'Cache e tratamento de erros', 'localStorage'] },
-  { title: 'Qualidade e ferramentas', items: ['Vite', 'Vitest', 'Testes unitários', 'Git e GitHub', 'GitHub Actions', 'GitHub Pages'] },
-  { title: 'Back-end e infraestrutura', items: ['Cloudflare Workers', 'Proxy de API', 'Variáveis de ambiente e secrets'] },
 ]
 
 export interface Project {
@@ -66,8 +64,8 @@ const PAGES = 'https://theusiiin.github.io'
 
 export const projects: Project[] = [
   {
-    id: 'cinescope',
-    name: 'CineScope — catálogo de filmes e séries',
+    id: 'cinetheusin',
+    name: 'CineTheusin — catálogo de filmes e séries',
     summary:
       'Plataforma de descoberta de filmes e séries com dados do TMDB, filtros, páginas de detalhes e biblioteca pessoal (favoritos, assistir depois, notas e listas).',
     highlights: ['Integração com a API do TMDB via proxy seguro', 'Notas sempre identificadas pela fonte', 'Biblioteca local com backup em JSON'],
@@ -122,23 +120,46 @@ export interface TimelineItem {
   placeholder: boolean
 }
 
-/** Substitua pelos seus dados reais e mude `placeholder` para false. */
+/** Baseado no currículo (sem dados de contato pessoais nem nomes de clientes). */
 export const experience: TimelineItem[] = [
   {
-    title: '[PREENCHER] Cargo',
-    organization: '[PREENCHER] Empresa',
-    period: '[PREENCHER] mês/ano – atual',
-    description: '[PREENCHER] Principais responsabilidades e resultados.',
-    placeholder: true,
+    title: 'Analista de Suporte',
+    organization: 'NeoAssist',
+    period: '03/2026 – atual',
+    description:
+      'Suporte técnico e funcional a clientes de uma plataforma SaaS Omnichannel: análise e resolução de incidentes, investigação de problemas e acompanhamento de chamados dentro dos SLAs. Interface entre clientes e as equipes de Produto e Desenvolvimento para tratativas de incidentes e melhorias, com suporte aos canais de WhatsApp, chat, e-mail, formulários web e redes sociais.',
+    placeholder: false,
+  },
+  {
+    title: 'Analista Pleno de Service Desk',
+    organization: 'Allied IT',
+    period: '03/2024 – 02/2026',
+    description:
+      'Suporte remoto N2 a múltiplos clientes de grande porte, via sistema de chamados e telefone: resolução de incidentes e requisições, administração de usuários (Active Directory e SAP), instalação e configuração de softwares, troubleshooting de ambientes corporativos e coordenação de fornecedores.',
+    placeholder: false,
   },
 ]
 
 export const education: TimelineItem[] = [
   {
-    title: '[PREENCHER] Curso',
-    organization: '[PREENCHER] Instituição',
-    period: '[PREENCHER] início – conclusão',
-    description: '[PREENCHER] Detalhes opcionais (ênfase, projetos, status).',
-    placeholder: true,
+    title: 'Análise e Desenvolvimento de Sistemas',
+    organization: 'Faculdade Impacta',
+    period: 'Conclusão: 2026',
+    description: 'Graduação tecnológica.',
+    placeholder: false,
+  },
+  {
+    title: 'Cursos complementares',
+    organization: 'Formação contínua',
+    period: 'Concluídos e em andamento',
+    description: 'SQL básico, HTML e CSS e Lógica de Programação. Cursando: Power BI e trilhas do Microsoft Learn.',
+    placeholder: false,
+  },
+  {
+    title: 'Ensino Médio',
+    organization: 'José Wilson Padinha',
+    period: 'Conclusão: 2021',
+    description: 'Ensino médio completo.',
+    placeholder: false,
   },
 ]

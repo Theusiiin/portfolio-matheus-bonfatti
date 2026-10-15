@@ -9,7 +9,7 @@ describe('conteúdo do portfólio', () => {
   })
 
   it('lista os quatro projetos, cada um com repositório e aplicação em HTTPS', () => {
-    expect(projects.map((p) => p.id).sort()).toEqual(['calculadora', 'cinescope', 'clima', 'portfolio'])
+    expect(projects.map((p) => p.id).sort()).toEqual(['calculadora', 'cinetheusin', 'clima', 'portfolio'])
     for (const p of projects) {
       expect(p.repoUrl).toMatch(/^https:\/\/github\.com\/Theusiiin\/[\w-]+$/)
       expect(p.demoUrl).toMatch(/^https:\/\/theusiiin\.github\.io\/[\w-]+\/$/)
